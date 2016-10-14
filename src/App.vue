@@ -11,6 +11,9 @@
           <el-menu-item index="/github">github</el-menu-item>
           <el-menu-item index="/grid">grid</el-menu-item>
           <el-menu-item index="/tree">tree</el-menu-item>
+          <el-menu-item index="/svg">SVG</el-menu-item>
+          <el-menu-item index="/select2">select2</el-menu-item>
+          <el-menu-item index="/todo">TodoMVC</el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span="16" :offset="2" class="view-content">

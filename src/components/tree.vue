@@ -20,8 +20,9 @@
   </div>
 </template>
 <script>
-import item from "./tree.vue"
+import Vue from 'vue'
   export default{
+    name: 'item',
     data(){
       return{
         open:false,
@@ -55,13 +56,10 @@ import item from "./tree.vue"
         })
       }
     },
-    components:{
-      item
-    }
   }
 </script>
 
-<style type="text/css">
+<style type="text/css" scoped>
   #template,.item{
     cursor: pointer;
   }

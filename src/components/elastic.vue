@@ -79,13 +79,13 @@
 </script>
 
 <style type="text/css">
-  h1{
+  #header-view-template h1{
     font-weight: 300;
     font-size: 1.8em;
     margin-top: 0;
   }
 
-  a{
+  #header-view-template a{
     color: #fff;
   }
 

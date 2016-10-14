@@ -22,6 +22,9 @@ import elasticview from './components/elasticview.vue'
 import github from './components/github.vue'
 import grid from './components/gridview.vue'
 import tree from './components/treeview.vue'
+import svg from './components/svg.vue'
+import todo from './components/todo.vue'
+import select2 from './components/select2.vue'
 
 const router = new VueRouter({
 	mode: 'history',
@@ -58,6 +61,18 @@ const router = new VueRouter({
 		{
 			path: '/tree',
 			component: tree
+		},
+		{
+			path: '/svg',
+			component: svg
+		},
+		{
+			path: '/todo',
+			component: todo
+		},
+		{
+			path: '/select2',
+			component: select2
 		}
 
 	]
