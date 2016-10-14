@@ -4,6 +4,7 @@ import VueRouter from "vue-router"
 import VueResource from 'vue-resource'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
+import VueFire from "vuefire"
 
 //开启debug模式
 Vue.config.debug = true
@@ -11,8 +12,17 @@ Vue.config.debug = true
 Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.use(Element)
+Vue.use(VueFire)
 
 import home from './components/home.vue'
+import firebase from './components/firebase.vue'
+import markdown from './components/markdown.vue'
+import useModal from './components/useModal.vue'
+import elasticview from './components/elasticview.vue'
+import github from './components/github.vue'
+import grid from './components/gridview.vue'
+import tree from './components/treeview.vue'
+
 const router = new VueRouter({
 	mode: 'history',
 	base: __dirname,
@@ -21,6 +31,35 @@ const router = new VueRouter({
 			path: '/',
 			component: home,
 		},
+		{
+			path: '/firebase',
+			component: firebase
+		},
+		{
+			path: '/markdown',
+			component: markdown
+		},
+		{
+			path: '/modal',
+			component: useModal
+		},
+		{
+			path: '/elastic',
+			component: elasticview
+		},
+		{
+			path: '/github',
+			component: github
+		},
+		{
+			path: '/grid',
+			component: grid
+		},
+		{
+			path: '/tree',
+			component: tree
+		}
+
 	]
 })
 
