@@ -7,10 +7,14 @@
 2.[Vue warn]: Duplicate presence of slot "default" found in the same render tree - this will likely cause render errors. (found in component
 <ElCol>)
 类似警告还有几处，应该是使用姿势不对= = 留坑待填
+
 3. [Vue warn]: Avoid mutating a prop directly since the value will be overwritten whenever the parent component re-renders. Instead, use a data or computed property based on the prop's value.
 同上 留坑待填
+
 4.在组件里使用Vue报错undefined，不知道是不是姿势不对，采用在组件里重新import Vue的方法暂时填掉。。。
+
 5.感觉在项目结构上不是很科学...
+
 6.为什么build出来的js有1M大小...可怕
 
 以上问题欢迎指点、共同探讨。
