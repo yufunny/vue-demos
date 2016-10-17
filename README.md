@@ -11,7 +11,9 @@
 3.[Vue warn]: Avoid mutating a prop directly since the value will be overwritten whenever the parent component re-renders. Instead, use a data or computed property based on the prop's value.
 同上 留坑待填
 
-4.在组件里使用Vue报错undefined，不知道是不是姿势不对，采用在组件里重新import Vue的方法暂时填掉。。。
+~~4.在组件里使用Vue报错undefined，不知道是不是姿势不对，采用在组件里重新import Vue的方法暂时填掉。。。~~
+
+已解决，采用this.$set 替代重新import Vue
 
 5.感觉在项目结构上不是很科学...
 

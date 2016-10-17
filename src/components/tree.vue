@@ -20,7 +20,6 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
   export default{
     name: 'item',
     data(){
@@ -45,7 +44,7 @@ import Vue from 'vue'
       },
       changeType:function(){
         if(!this.isFloder){
-          Vue.set(this.model,'children',[])
+          this.$set(this.model,'children',[])
           this.addChild()
           this.open = true;
         }
