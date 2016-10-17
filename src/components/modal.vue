@@ -1,5 +1,5 @@
 <template  id="modal-template">
-<div class="modal-mask" v-show="show" transition="modal">
+<div class="modal-mask" v-show="isShow" transition="modal">
   <div class="modal-wrapper">
     <div class="modal-container">
       <div class="modal-header">
@@ -37,9 +37,14 @@
         required: true,
       }
     },
+    computed:{
+      isShow(){
+        return this.show
+      }
+    },
     methods:{
       bar:function(){
-        this.show = false
+        this.isShow = false
         this.$emit('foo')
       }
     }
